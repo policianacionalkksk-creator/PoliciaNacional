@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SE BUSCA - Departamento de Policía</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #e2e6ee;
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 40px;
+    }
+
+    .marco {
+      width: 720px;
+      background: #ffffff;
+      border: 8px solid #111827;
+      box-shadow: 0 0 30px rgba(0,0,0,.4);
+      padding: 28px 32px 32px;
+      position: relative;
+    }
+
+    .encabezado {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #111827;
+      padding-bottom: 14px;
+      margin-bottom: 18px;
+    }
+
+    .escudo {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      border: 2px solid #111827;
+      margin-right: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      text-align: center;
+      background: #e5edf7;
+    }
+
+    .titulo-encabezado {
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #111827;
+      line-height: 1.4;
+    }
+
+    .titulo-encabezado strong {
+      font-size: 16px;
+      display: block;
+    }
+
+    .se-busca {
+      text-align: center;
+      margin: 8px 0 18px;
+      letter-spacing: 6px;
+      font-size: 40px;
+      font-weight: 800;
+      color: #111827;
+    }
+
+    .bloque-principal {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    .foto {
+      border: 2px solid #111827;
+      height: 360px;
+      overflow: hidden;
+      background: #cbd5e1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .datos {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .datos h2 {
+      font-size: 17px;
+      margin-bottom: 6px;
+      border-bottom: 1px solid #9ca3af;
+      padding-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .datos p {
+      margin-bottom: 4px;
+    }
+
+    .datos b {
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .observaciones {
+      font-size: 14px;
+      margin-top: 6px;
+      color: #111827;
+    }
+
+    .recompensa {
+      margin-top: 12px;
+      border-top: 2px solid #111827;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 15px;
+    }
+
+    .recompensa-importe {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .contacto {
+      margin-top: 18px;
+      padding: 10px 14px;
+      background: #1d4ed8;
+      color: #ffffff;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .contacto small {
+      display: block;
+      font-size: 12px;
+      font-weight: normal;
+      margin-top: 2px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="marco">
+
+    <!-- ENCABEZADO -->
+    <div class="encabezado">
+      <!-- Escudo genérico (podés cambiarlo por una imagen: escudo.png) -->
+      <!-- Si querés usar una imagen, reemplazá este div por:
+           
+      -->
+      <img class="escudo" src="Emblem_of_the_Argentine_Federal_Police.svg" alt="Escudo policial">
+
+      <div class="titulo-encabezado">
+        <strong>DEPARTAMENTO DE POLICÍA</strong>
+        DIRECCIÓN DE INVESTIGACIONES CRIMINALES<br>
+        SECCIÓN PERSONAS BUSCADAS
+      </div>
+    </div>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <div class="se-busca">SE BUSCA</div>
+
+    <!-- FICHA PRINCIPAL -->
+    <div class="bloque-principal">
+
+      <!-- FOTO -->
+      <div class="foto">
+        <!-- 🔴 ACÁ VA TU FOTO -->
+        <img src="ninu.jpg" alt="Persona buscada">
+      </div>
+
+      <!-- DATOS -->
+      <div class="datos">
+        <h2>Datos de identificación</h2>
+
+        <p><b>Nombre completo:</b> Juan Pérez</p>
+        <p><b>Alias conocidos:</b> "Ninu"</p>
+        <p><b>Fecha de nacimiento:</b> 01/03/2005</p>
+        <p><b>Nacionalidad:</b> Argentina</p>
+        <p><b>Último domicilio conocido:</b> Ciudad de Buenos Aires, Berazategui</p>
+        <p><b>Última ubicación conocida:</b> Zona Platanos, Buenos Aires</p>
+
+        <p><b>Características físicas:</b> 1,80 m aprox., contextura media, cabello negro, ojos oscuros.</p>
+
+        <div class="observaciones">
+          <b>Observaciones:</b> Si posee información sobre esta persona, se solicita no intervenir
+          por medios propios y comunicarse inmediatamente con las autoridades competentes.
+        </div>
+      </div>
+    </div>
+
+    <!-- RECOMPENSA / INFO EXTRA -->
+    <div class="recompensa">
+      <div>
+        <b>Caso N.º:</b> 2025-000123<br>
+        <b>Unidad interviniente:</b> Brigada de Investigaciones
+      </div>
+      <div class="recompensa-importe">
+        RECOMPENSA OFRECIDA<br>
+        $ 1.400.000 (según normativa vigente)
+      </div>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="contacto">
+      LÍNEA ANÓNIMA: 0800-222-2422
+      <small>La información aportada será tratada con la más estricta reserva.</small>
+    </div>
+
+  </div>
+
+</body>
+</html>

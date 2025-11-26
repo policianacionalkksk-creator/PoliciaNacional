@@ -1,0 +1,33 @@
+body{
+  margin: 0;
+}
+input{
+  margin: 10px;
+  display: flex;
+  border: none;
+  background: rgb(232, 232, 232);
+  padding: 10px;
+  
+}
+
+.box{
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 51px;
+  
+}
+@font-face {
+  font-family: "tektur";
+  src: url(fonts/static/Tektur-Regular.ttf);
+}
+span{
+ 
+  font-size: 30px;
+  font-family: "tektur";
+  text-align: center;
+}
